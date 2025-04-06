@@ -22,7 +22,7 @@ Work and Research Experience
 
 Research Projects
 ======
-Working Papers
+
 *Training Within Firms
 Brayan Diaz, Andrea Neyra-Nazarrett, Julian Ramirez, Raffaella Sadun, Jorge Tamayo
 This paper explores the organizational frictions that hinder training implementation within firms, focusing on the role of middle managers. Using administrative data from three large Latin American firms—a car manufacturer, a quick-service restaurant chain, and a retailer—the study finds that middle managers who actively promote employee well-being and development significantly boost training participation. These managers also foster improved team performance and reduce absenteeism, particularly during organizational change. The paper uses manager rotation and event study designs to show that the arrival of a “High Training” manager increases training take-up by up to 60%, enhances resilience to demand shocks, and improves HR outcomes like promotions and retention. A stylized model illustrates how middle managers influence training-related labor supply responses. The findings underscore the need to embed managerial behavior into the design and success of workforce development policies.
