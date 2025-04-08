@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-#Graduate Teaching Experience
+Graduate Teaching Experience
 ---
 
 ## Harvard University FAS
