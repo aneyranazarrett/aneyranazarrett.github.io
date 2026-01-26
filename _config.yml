@@ -8,7 +8,7 @@ name                     : &name "Andrea Neyra Nazarrett"
 description              : &description "About Me I am a fourth-year PhD student in the Political Economy and Government program (Economics track) at Harvard University. My research lies at the intersection of personnel, labor, and public economics, with a particular interest in how organizations and governments shape economic outcomes.I hold a Master in Public Policy (MPP) from the Harvard Kennedy School, where I was a Fulbright-García Robles Scholar, and a BA in Economics from ITAM (Instituto Tecnológico Autónomo de México). Prior to my doctoral studies, I worked as a research assistant at the World Bank and the Inter-American Development Bank"
 url                      : https://andreaneyra.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""
-repository               : "aneyranaarrett/andreaneyra.github.io"
+repository               : "aneyranazarrett/andreaneyra.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
