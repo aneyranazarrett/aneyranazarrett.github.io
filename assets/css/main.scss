@@ -44,144 +44,188 @@
 ;
 
 /* ==========================================================================
-   Ruru-inspired theme (custom) — Work Sans + EB Garamond, coral accent
+   Custom theme — Fraunces (name) · EB Garamond (headings) · Work Sans (body)
+   Coral accent, single narrow column, always-light.
    ========================================================================== */
 
 $accent: #ff7a5c;
+$ink: #2f2f2f;        // body text
+$ink-soft: #6a6a6a;   // secondary text
+$head: #1a1a1a;       // headings
+$rule: #ececec;       // hairlines
 
-/* Layout: narrow, centered single column */
+/* ---- Layout: narrow, centered single column ---- */
 #main {
-  max-width: 720px;
+  max-width: 730px;
   margin-left: auto;
   margin-right: auto;
   float: none;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-
 .masthead__inner-wrap {
-  max-width: 720px;
+  max-width: 730px;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-
 .page { width: 100% !important; padding-right: 0 !important; }
 .page__inner-wrap { width: 100%; }
 
-/* Body typography — Work Sans */
+/* ---- Body typography — Work Sans ---- */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 body,
 .page__content {
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #444444;
+  color: $ink;
 }
 
 .page__content {
   font-size: 17px;
-  line-height: 1.78;
+  line-height: 1.75;
 }
-
-.page__content p { margin: 0 0 1.4em; }
+.page__content p { margin: 0 0 1.35em; }
 .page__content > p:first-of-type { margin-top: 0; }
-.page__content li { line-height: 1.6; }
+.page__content ul { margin: 0.4em 0 1.35em; }
+.page__content li { line-height: 1.55; margin-bottom: 0.4em; }
+.page__content small { font-size: 0.82em; color: $ink-soft; line-height: 1.5; }
+.page__content hr { border: 0; border-top: 1px solid $rule; margin: 2.4em 0; }
 
-/* Headings & brand — EB Garamond, bold, black */
+/* ---- Headings — EB Garamond ---- */
 h1, h2, h3, h4,
 .page__title,
-.archive__item-title,
-.site-title {
+.archive__item-title {
   font-family: "EB Garamond", Georgia, serif;
-  color: #000000;
+  color: $head;
   font-weight: 600;
   letter-spacing: normal;
-  line-height: 1.12;
+  line-height: 1.15;
 }
+.page__title { font-size: 2.1em; margin: 0.1em 0 0.7em; }
+.page__content h2 { font-size: 1.65em; margin: 2em 0 0.55em; }
+.page__content h3 { font-size: 1.3em; margin: 1.7em 0 0.3em; }
 
-.page__title { font-size: 2.2em; margin: 0.2em 0 0.6em; }
-.page__content h2 { font-size: 1.95em; margin-top: 1.9em; border-bottom: none; }
-.page__content h3 { font-size: 1.45em; margin-top: 1.5em; margin-bottom: 0.3em; }
-
-/* Masthead / navigation */
-.masthead { border-bottom: 1px solid #ececec; }
+/* ---- Masthead / navigation ---- */
+.masthead { border-bottom: 1px solid $rule; }
 .greedy-nav { background: #ffffff; }
 .site-title {
   font-family: "Fraunces", "EB Garamond", serif !important;
   font-size: 1.95em !important;
   font-weight: 600;
   letter-spacing: -0.01em;
+  color: $head;
 }
 .greedy-nav a {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: $head;
 }
 .greedy-nav a:hover { color: $accent; }
 .greedy-nav .visible-links a:before { background: $accent; }
 
-/* Links — black with coral hover; editorial underline in body */
-a { color: #000000; }
+/* ---- Links ---- */
+a { color: $head; }
 a:hover { color: $accent; }
 .page__content a {
-  color: #000000;
+  color: $head;
   text-decoration: underline;
   text-decoration-color: $accent;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 .page__content a:hover { color: $accent; }
+/* Heading links (paper titles, section links) stay clean — no underline */
+.page__content h1 a, .page__content h2 a, .page__content h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+.page__content h2 a:hover, .page__content h3 a:hover { color: $accent; }
 
-/* Home intro — big photo on the left, text wraps right and below */
+::selection { background: rgba(255, 122, 92, 0.22); }
+
+/* ---- Home intro: name + role beside a left-floated photo, rest below ---- */
 .intro-photo {
   width: 290px;
   max-width: 42%;
   float: left;
-  margin: 0 1.8em 0.6em 0;
-  border: 1px solid #e5e5e5;
+  margin: 0.15em 1.8em 0.7em 0;
+  border: 1px solid #e6e6e6;
   border-radius: 3px;
 }
-
-.lead {
-  font-size: 1.15em;
-  font-weight: 600;
-  color: #222222;
-}
-
-/* Name + role beside the photo; rest of bio clears below it */
 .intro-head h1.intro-name {
-  font-size: 2.4em;
-  margin: 0 0 0.05em;
-  line-height: 1.05;
+  font-family: "Fraunces", "EB Garamond", serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.1em;
+  line-height: 1.04;
 }
 .intro-role {
   font-family: "Work Sans", sans-serif;
-  font-size: 1em;
+  font-size: 0.92em;
   font-weight: 500;
-  color: #777777;
-  margin: 0 0 1.1em;
+  color: $ink-soft;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.15em;
 }
+.intro-head .lead,
+.intro-head strong:first-child { color: #232323; }
 .intro-rest {
   clear: left;
   font-size: 0.9em;
   color: #555555;
 }
+.intro-rest p { margin-bottom: 1.1em; }
 
+/* ---- Lead / CV download button ---- */
+.lead { margin: 0 0 2em; }
+.lead a {
+  display: inline-block;
+  text-decoration: none !important;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 0.45em 1em;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: $head;
+}
+.lead a:hover { border-color: $accent; color: $accent; }
+
+/* ---- Footer ---- */
+.page__footer {
+  background: #ffffff;
+  border-top: 1px solid $rule;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.78em;
+  color: #999999;
+}
+.page__footer a { color: #888888; }
+.page__footer a:hover { color: $accent; }
+
+/* ---- Responsive ---- */
 @media (max-width: 600px) {
-  .intro-photo { width: 190px; max-width: 50%; margin: 0 1.2em 0.6em 0; }
-  #main, .masthead__inner-wrap { padding-left: 1.1em; padding-right: 1.1em; }
-  .page__title { font-size: 1.9em; }
+  .intro-photo { width: 175px; max-width: 46%; margin: 0.15em 1.2em 0.6em 0; }
+  #main, .masthead__inner-wrap { padding-left: 1.15em; padding-right: 1.15em; }
+  .page__title { font-size: 1.85em; }
+  .intro-head h1.intro-name { font-size: 2em; }
+  .site-title { font-size: 1.6em !important; }
 }
 
-/* Always render light (like Ruru) — fix unreadable OS dark mode */
+/* ---- Always render light (like Ruru) — fix unreadable OS dark mode ---- */
 @media (prefers-color-scheme: dark) {
   html, body, #main, .page, .masthead, .greedy-nav, .page__footer {
     background-color: #ffffff !important;
   }
-  body, .page__content, .page__content p, .page__content li, .intro-role, .intro-rest {
-    color: #444444 !important;
+  body, .page__content, .page__content p, .page__content li,
+  .intro-role, .intro-rest, .page__content small {
+    color: #2f2f2f !important;
   }
   h1, h2, h3, h4,
   .site-title, .page__title, .intro-name,
   a, .greedy-nav a, .page__content a {
-    color: #000000 !important;
+    color: #1a1a1a !important;
   }
-  a:hover, .greedy-nav a:hover, .page__content a:hover { color: #ff7a5c !important; }
-  .page__footer, .page__footer a, .page__footer .page__footer-copyright { color: #444444 !important; }
+  a:hover, .greedy-nav a:hover, .page__content a:hover,
+  .page__content h2 a:hover, .page__content h3 a:hover { color: #ff7a5c !important; }
+  .page__footer, .page__footer a { color: #999999 !important; }
 }
