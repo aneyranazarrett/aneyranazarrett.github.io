@@ -5,7 +5,7 @@ site_theme               : "default"
 title                    : "Andrea Neyra Nazarrett"
 title_separator          : "-"
 name                     : &name "Andrea Neyra Nazarrett"
-description              : &description "About Me I am a fourth-year PhD student in the Political Economy and Government program (Economics track) at Harvard University. My research lies at the intersection of personnel, labor, and public economics, with a particular interest in how organizations and governments shape economic outcomes.I hold a Master in Public Policy (MPP) from the Harvard Kennedy School, where I was a Fulbright-García Robles Scholar, and a BA in Economics from ITAM (Instituto Tecnológico Autónomo de México). Prior to my doctoral studies, I worked as a research assistant at the World Bank and the Inter-American Development Bank"
+description              : &description "Andrea Neyra Nazarrett is a PhD candidate in Political Economy and Government (Economics track) at Harvard University. Her research is in organizational and personnel economics, studying how managers, organizational design, and firm practices shape productivity inside firms, using administrative data from firms in Latin America. She will be on the academic job market in 2027–2028."
 url                      : https://aneyranazarrett.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""
 repository               : "aneyranazarrett/aneyranazarrett.github.io"
@@ -16,7 +16,7 @@ repository               : "aneyranazarrett/aneyranazarrett.github.io"
 author:
   name             : "Andrea Neyra Nazarrett"
   avatar           : "profile.jpg"
-  bio              : "PhD Student in Political Economy"
+  bio              : "PhD Candidate · Organizational & Personnel Economics"
   location         : "Cambridge, MA"
   employer         : "Harvard University"
   uri              : 
@@ -24,7 +24,7 @@ author:
 
   # Academic websites
   arxiv            : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=nn1Pb-MAAAAJ&hl=en"
   impactstory      : 
   orcid            : 
   semantic         : 
