@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600&display=swap');
 
 /*
  * This file controls what is imported from /_sass
@@ -15,7 +15,6 @@
 
     "themes",
     "theme/default",
-    "theme/dark",
 
     "include/mixins",
     "vendor/susy/susy",
@@ -104,7 +103,12 @@ h1, h2, h3, h4,
 /* Masthead / navigation */
 .masthead { border-bottom: 1px solid #ececec; }
 .greedy-nav { background: #ffffff; }
-.site-title { font-size: 1.75em !important; font-weight: 600; }
+.site-title {
+  font-family: "Fraunces", "EB Garamond", serif !important;
+  font-size: 1.95em !important;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
 .greedy-nav a {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
@@ -153,10 +157,31 @@ a:hover { color: $accent; }
   color: #777777;
   margin: 0 0 1.1em;
 }
-.intro-rest { clear: left; }
+.intro-rest {
+  clear: left;
+  font-size: 0.9em;
+  color: #555555;
+}
 
 @media (max-width: 600px) {
   .intro-photo { width: 190px; max-width: 50%; margin: 0 1.2em 0.6em 0; }
   #main, .masthead__inner-wrap { padding-left: 1.1em; padding-right: 1.1em; }
   .page__title { font-size: 1.9em; }
+}
+
+/* Always render light (like Ruru) — fix unreadable OS dark mode */
+@media (prefers-color-scheme: dark) {
+  html, body, #main, .page, .masthead, .greedy-nav, .page__footer {
+    background-color: #ffffff !important;
+  }
+  body, .page__content, .page__content p, .page__content li, .intro-role, .intro-rest {
+    color: #444444 !important;
+  }
+  h1, h2, h3, h4,
+  .site-title, .page__title, .intro-name,
+  a, .greedy-nav a, .page__content a {
+    color: #000000 !important;
+  }
+  a:hover, .greedy-nav a:hover, .page__content a:hover { color: #ff7a5c !important; }
+  .page__footer, .page__footer a, .page__footer .page__footer-copyright { color: #444444 !important; }
 }
