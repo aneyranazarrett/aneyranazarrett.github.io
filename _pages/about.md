@@ -1,15 +1,14 @@
 ---
 permalink: /
-title: "About Me"
 author_profile: false
 redirect_from: 
   - /about/
   - /about.html
   - 
 ---
-![Andrea Neyra Nazarrett](/images/profile.jpg){: .align-right .profile-photo}
+<img src="/images/profile.jpg" alt="Andrea Neyra Nazarrett" class="intro-photo">
 
-I am a fifth-year PhD candidate in the Political Economy and Government program (Economics track) at Harvard University. My research is in **organizational and personnel economics**: I study how managers, organizational design, and firm practices shape worker productivity, training, and performance, using rich administrative data from firms in Latin America.
+**I am a fifth-year PhD candidate in Political Economy and Government (Economics track) at Harvard University, working in organizational and personnel economics.** I study how managers, organizational design, and firm practices shape worker productivity, training, and performance, using rich administrative data from firms in Latin America.
 
 I will be on the academic job market in the 2027–2028 cycle.
 
