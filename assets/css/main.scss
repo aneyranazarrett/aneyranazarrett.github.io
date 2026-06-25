@@ -77,11 +77,12 @@ body,
 }
 
 .page__content {
-  font-size: 1.08em;
-  line-height: 1.75;
+  font-size: 17px;
+  line-height: 1.78;
 }
 
 .page__content p { margin: 0 0 1.4em; }
+.page__content > p:first-of-type { margin-top: 0; }
 .page__content li { line-height: 1.6; }
 
 /* Headings & brand — EB Garamond, bold, black */
@@ -128,8 +129,9 @@ a:hover { color: $accent; }
   width: 290px;
   max-width: 42%;
   float: left;
-  margin: 0.3em 1.8em 1.1em 0;
-  border-radius: 4px;
+  margin: 0 1.8em 0.6em 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .lead {
@@ -139,7 +141,7 @@ a:hover { color: $accent; }
 }
 
 @media (max-width: 600px) {
-  .intro-photo { width: 190px; max-width: 50%; margin: 0.2em 1.2em 0.8em 0; }
+  .intro-photo { width: 190px; max-width: 50%; margin: 0 1.2em 0.6em 0; }
   #main, .masthead__inner-wrap { padding-left: 1.1em; padding-right: 1.1em; }
   .page__title { font-size: 1.9em; }
 }
