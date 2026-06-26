@@ -121,6 +121,39 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
 .btn:hover { background: var(--link); color: #fff; text-decoration: none; }
 .cv-sub { font-weight: 700; font-size: 0.95rem; color: var(--head); margin: 1.4rem 0 0.3rem; }
 
+/* ---- Mexico City: gallery + guide ---- */
+.tip {
+  font-style: italic;
+  color: var(--soft);
+  border-left: 3px solid #d9d9d9;
+  padding-left: 1rem;
+  margin: 0 0 1.8rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 1.6rem 0 2.6rem;
+}
+.gallery figure { margin: 0; }
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+.gallery figcaption {
+  font-size: 0.76rem;
+  color: var(--soft);
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.sublabel { font-weight: 700; font-size: 0.95rem; color: var(--head); margin: 1.1rem 0 0.2rem; }
+.guide ul { margin-top: 0.2rem; }
+.guide li b, .guide li strong { color: var(--head); }
+@media (max-width: 600px) { .gallery { grid-template-columns: repeat(2, 1fr); gap: 7px; } }
+
 /* ---- Footer ---- */
 .foot {
   border-top: 1px solid var(--rule);
