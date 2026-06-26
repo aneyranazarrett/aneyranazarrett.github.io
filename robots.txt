@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aneyranazarrett.github.io/sitemap.xml
