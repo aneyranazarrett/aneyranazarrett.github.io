@@ -169,3 +169,18 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
   .hero-name { font-size: 2.1rem; margin-top: 1.8rem; }
   .home-photo { float: none; display: block; width: 160px; margin: 0 0 1.2rem; }
 }
+
+/* --- Paper entries with thumbnails (Sep 2026) --- */
+.wplist li { display: flex; gap: 1.1rem; align-items: flex-start; margin-bottom: 1.6rem; }
+.wplist .thumb {
+  flex: 0 0 110px; width: 110px; border: 1px solid #ddd; border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08); background: #fff;
+}
+.wplist .entry { flex: 1; min-width: 0; }
+.wplist .t { font-weight: 700; font-size: 1.18rem; line-height: 1.35; }
+.wplist .abs { font-size: 0.9rem; color: #444; margin: 0.45rem 0 0; line-height: 1.55; }
+.jmp-flag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: #2171B5; color: #fff; border-radius: 4px; padding: 2px 8px; margin-bottom: 4px; }
+@media (max-width: 560px) {
+  .wplist li { flex-direction: column; }
+  .wplist .thumb { width: 140px; }
+}
