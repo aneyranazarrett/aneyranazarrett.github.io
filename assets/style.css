@@ -184,3 +184,23 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
   .wplist li { flex-direction: column; }
   .wplist .thumb { width: 140px; }
 }
+
+/* ---- Teaching page (Sep 2026) ---- */
+.tstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 1.8rem 0 0.6rem; }
+.tstat { border: 1px solid var(--rule); border-radius: 6px; padding: 0.9rem 1rem 0.8rem; text-align: center; }
+.tstat .n { font-family: "Libre Baskerville", Georgia, serif; font-size: 1.7rem; color: var(--link); line-height: 1.1; }
+.tstat .l { font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--soft); margin-top: 0.3rem; line-height: 1.4; }
+.tcards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1rem 0 1.4rem; }
+.tcard { border: 1px solid var(--rule); border-left: 3px solid var(--link); border-radius: 0 6px 6px 0; padding: 0.9rem 1.1rem 0.8rem; }
+.tcard h3 { margin: 0 0 0.25rem; font-size: 1.02rem; font-family: "Open Sans", sans-serif; font-weight: 700; }
+.tcard p { font-size: 0.87rem; color: #444; line-height: 1.55; margin: 0 0 0.55rem; }
+.aud { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--link); background: rgba(28, 74, 126, 0.08); border-radius: 3px; padding: 1px 7px; margin-right: 4px; }
+.texp { margin: 0.4rem 0 1.6rem; }
+.texp .lead { font-size: 0.95rem; color: #3a3a3a; margin-bottom: 0.6rem; }
+.tref { border-top: 1px solid var(--rule); margin-top: 2.4rem; padding-top: 1.1rem; font-size: 0.92rem; color: #3a3a3a; }
+@media (max-width: 600px) {
+  .tstats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .tstat { padding: 0.6rem 0.4rem; }
+  .tstat .n { font-size: 1.3rem; }
+  .tcards { grid-template-columns: 1fr; }
+}
